@@ -6,6 +6,13 @@
         
     </head>
     <body>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Descripcion')">Descripcion</button>
+                <button class="tablinks" onclick="openTab(event, 'Habilidades')">Habilidades</button>
+                <button class="tablinks" onclick="openTab(event, 'Experiencias y Proyectos')">Experiencias y Proyectos</button>
+                <button class="tablinks" onclick="openTab(event, 'Redes')">Redes Sociales</button>
+                <button class="tablinks" onclick="openTab(event, 'Contacto')">Contacto</button>
+            </div>
            <h1> Mi Portfolio Personal: Nicolas Taranzano</h1> 
            <div class="img_container">
                 <img width="400px" height="auto" src="images/fotonico.jpg">
@@ -16,34 +23,40 @@
                     </p>                 
                 </div>
             </div>    
-            <p>
-                <h2> Descripcion </h2>
-                Soy un estudiante muy apasionada con 3 años en la carrera, con ganas de seguir aprendiendo sobre cosas sobre programacion. Me caracterizo por ser un alumno muy participativo y alegre, buscando siempre mejorar como persona y estudiante. Mi objetivo de aca a unos años es poder recibirme y poder ejercer de Ingeniero en Sistemas de Informacion.
-            </p>
-            <p> 
-                <h2> Habilidades</h2>
-                Tengo habilidades utiles para poder progresar en el ambito academico y profesional en un futuro. Tengo manejo de la herramientas como Excel, Word, PowerPoint. Se utilizar programas de facturacion Online, para realizar facturas y cargar datos de empleado, proveedores, etc. Puedo realizar caja, cierre de caja, manejo de Stock, Liquidacion de Haberes, etc.
-            </p>
-            <div class="exp_container">
-                <div>
-                    <h2> Experiencias Laborales</h2>
-                    <ul>
-                        <li>Secretario de un estudio Contable.</li>
-                        <li>Atencion al Publico.</li>
-                        <li>Repositor de Local Comercial.</li>
-                        <li>Fichero de banco del Colegio Marista.</li>
-                    </ul> 
-                </div>
-                <div>
-                    <h2> Proyectos en los que participe</h2>
-                    <ul>
-                        <li>Creacion de pagina web para ventas.</li>
-                        <li>Ventas de productos de Padel al por menor y mayor.</li>
-                        <li>Creacion de equipo de E-Sports de la ciudad.</li>
-                    </ul>
-                </div>
-                
+            <div id="Descripcion" class="tabcontent">
+                <p>
+                    <h2> Descripcion </h2>
+                        Soy un estudiante muy apasionada con 3 años en la carrera, con ganas de seguir aprendiendo sobre cosas sobre programacion. Me caracterizo por ser un alumno muy participativo y alegre, buscando siempre mejorar como persona y estudiante. Mi objetivo de aca a unos años es poder recibirme y poder ejercer de Ingeniero en Sistemas de Informacion.
+                    </p>
             </div>
+            <div id="Habilidades" class="tabcontent">
+                <p> 
+                    <h2> Habilidades</h2>
+                    Tengo habilidades utiles para poder progresar en el ambito academico y profesional en un futuro. Tengo manejo de la herramientas como Excel, Word, PowerPoint. Se utilizar programas de facturacion Online, para realizar facturas y cargar datos de empleado, proveedores, etc. Puedo realizar caja, cierre de caja, manejo de Stock, Liquidacion de Haberes, etc.
+                </p>    
+            </div>
+            <div id="Experiencias y Proyectos" class="tabcontent">
+                <div class="exp_container">
+                    <div>
+                        <h2> Experiencias Laborales</h2>
+                        <ul>
+                            <li>Secretario de un estudio Contable.</li>
+                            <li>Atencion al Publico.</li>
+                            <li>Repositor de Local Comercial.</li>
+                            <li>Fichero de banco del Colegio Marista.</li>
+                        </ul> 
+                    </div>
+                    <div>
+                        <h2> Proyectos en los que participe</h2>
+                        <ul>
+                            <li>Creacion de pagina web para ventas.</li>
+                            <li>Ventas de productos de Padel al por menor y mayor.</li>
+                            <li>Creacion de equipo de E-Sports de la ciudad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        <div id="Redes" class="tabcontent">
             <div class="redes">
                 <h2> Mis Redes Sociales</h2>
                 <ul>
@@ -53,7 +66,9 @@
                     <li><a href="https://www.linkedin.com/in/nicolas-taranzano-3b4a31270/" target="_blank">LinkedIn</a></li>
                 </ul>
           
-            </div>
+        </div>        
+        </div>
+        <div id="Contacto" class="tabcontent">
             <div class="formulario">
                 <div>
                     <h3>Si tenes preguntas, NO DUDES EN CONTACTARME!!!</h3>
@@ -76,6 +91,23 @@
                     </form>
                 </div>    
             </div>
+
+        </div>
+            <script>
+                function openTab(evt, tabName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
                      
     </body>
 </html>

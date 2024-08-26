@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styleuno.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <style>
+            /* Estilos para las pestañas */
+            .tab {
+                overflow: hidden;
+                border-bottom: 1px solid #ccc;
+            }
+
+            .tab button {
+                background-color: inherit;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border-top: none;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1> Mi Portfolio Personal: Nicolas Taranzano</h1>
+
+        <!-- Pestañas -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Descripcion')">Descripcion</button>
+            <button class="tablinks" onclick="openTab(event, 'Habilidades')">Habilidades</button>
+            <button class="tablinks" onclick="openTab(event, 'Experiencia')">Experiencia</button>
+            <button class="tablinks" onclick="openTab(event, 'Proyectos')">Proyectos</button>
+            <button class="tablinks" onclick="openTab(event, 'Redes')">Redes Sociales</button>
+            <button class="tablinks" onclick="openTab(event, 'Contacto')">Contacto</button>
+        </div>
+
+        <!-- Contenido de las pestañas -->
+        <div id="Descripcion" class="tabcontent">
+            <h2>Descripcion</h2>
+            <p>Soy un estudiante muy apasionado con 3 años en la carrera...</p>
+        </div>
+
+        <div id="Habilidades" class="tabcontent">
+            <h2>Habilidades</h2>
+            <p>Tengo habilidades utiles para poder progresar en el ambito academico...</p>
+        </div>
+
+        <div id="Experiencia" class="tabcontent">
+            <h2>Experiencias Laborales</h2>
+            <ul>
+                <li>Secretario de un estudio Contable.</li>
+                <li>Atencion al Publico.</li>
+                <li>Repositor de Local Comercial.</li>
+                <li>Fichero de banco del Colegio Marista.</li>
+            </ul>
+        </div>
+
+        <div id="Proyectos" class="tabcontent">
+            <h2>Proyectos en los que participe</h2>
+            <ul>
+                <li>Creacion de pagina web para ventas.</li>
+                <li>Ventas de productos de Padel al por menor y mayor.</li>
+                <li>Creacion de equipo de E-Sports de la ciudad.</li>
+            </ul>
+        </div>
+
+        <div id="Redes" class="tabcontent">
+            <h2>Mis Redes Sociales</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/nicotaranzano_/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/nicolas.taranzano/" target="_blank">Facebook</a></li>
+                <li><a href="https://github.com/NicolasTaranzano" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/nicolas-taranzano-3b4a31270/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <div id="Contacto" class="tabcontent">
+            <h2>Contacto</h2>
+            <h3>Si tenes preguntas, NO DUDES EN CONTACTARME!!!</h3>
+            <form method="post" action="https://server.com/pagina">
+                <ul>    
+                    <li>
+                        <label for="first_name">Nombre:</label>
+                        <input name="first_name" id="first_name" placeholder="Nombre" required>
+                    </li>
+                    <li>
+                        <label for="telefono">Telefono:</label>
+                        <input name="telefono" id="telefono" placeholder="Telefono" required>
+                    </li>
+                    <li>
+                        <label for="email">Email:</label>
+                        <input name="email" id="email" placeholder="abc@gmail.com" required>       
+                    </li>
+                </ul>  
+                <input type="submit" value="Enviar Datos">   
+            </form>
+        </div>
+
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </body>
+</html>
