@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-family: "Pacifico", cursive;
+}
+h1{
+    font-weight: bolder;
+}
+.img_container{
+    text-align: center;
+}
+img:hover{
+    border: 5px solid black;
+}
+.img_container{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 30px;
+}
+.img_container img{
+    margin-right: 10px;
+    
+}
+.exp_container{
+    display: flex;
+    align-items: middle ;
+    margin-left: 475px;
+    
+    h2{
+        font-family: fantasy;
+        text-align: center  ;
+    }            
+}
+.redes{
+    h2{
+        font-family: fantasy;
+
+    }
+}
+.formulario{
+    display: flex;
+    align-items: middle;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    margin-right: 1000px;
+    h3{
+        margin-left: 6px;
+    }
+    input{
+        text-align: center;
+    }
+    
+}
+
