@@ -1,0 +1,43 @@
+h1{
+    background-color: rgb(215, 160, 234);
+    text-align: center;
+    font-family:  sans-serif ;
+}
+h2{
+    background-color: rgb(255, 72, 0);
+    text-align: center;
+}
+body{
+    border: 1px solid;
+    margin-left: 7px;
+    background-color: antiquewhite;
+    font-family: Arial  ;
+    font-size: 14px;
+    text-align: justify;
+}
+p{
+    background-color: white;
+    border-radius: 100px;
+    
+}
+.img_container{
+    text-align: center;
+}
+
+img:hover{
+    border: 5px solid grey;
+}
+img{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    
+}
+h3{
+    font-family: italic;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+
