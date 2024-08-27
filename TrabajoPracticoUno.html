@@ -6,34 +6,46 @@
         
     </head>
     <body>
+        <nav>
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'Descripcion')">Descripcion</button>
                 <button class="tablinks" onclick="openTab(event, 'Habilidades')">Habilidades</button>
                 <button class="tablinks" onclick="openTab(event, 'Experiencias y Proyectos')">Experiencias y Proyectos</button>
                 <button class="tablinks" onclick="openTab(event, 'Redes')">Redes Sociales</button>
                 <button class="tablinks" onclick="openTab(event, 'Contacto')">Contacto</button>
-            </div>
-           <h1> Mi Portfolio Personal: Nicolas Taranzano</h1> 
+            </div> 
+        </nav>    
+        <header>
+            <h1> Mi Portfolio Personal: Nicolas Taranzano</h1>
+        </header>    
+             
            <div class="img_container">
-                <img width="400px" height="auto" src="images/fotonico.jpg">
+                <img width="400px" height="auto" src="images/fotoNico2.jpeg">
            
-                <div class="img_container">
+                <div>
                     <p>
-                        <b>Nombre:</b> Nicolas Agustin Taranzano. <br> <b> Titulo/Puesto:</b> Estudiante de Ingenieria en Sistemas de UTN San Francisco.
+                        <strong> Nombre: </strong> Nicolas Agustin Taranzano.  
                     </p>                 
+                    <p>
+                        <strong> Titulo/Puesto: </strong> Desarrollador de Software.
+                    </p>
                 </div>
             </div>    
             <div id="Descripcion" class="tabcontent">
-                <p>
-                    <h2> Descripcion </h2>
-                        Soy un estudiante muy apasionada con 3 años en la carrera, con ganas de seguir aprendiendo sobre cosas sobre programacion. Me caracterizo por ser un alumno muy participativo y alegre, buscando siempre mejorar como persona y estudiante. Mi objetivo de aca a unos años es poder recibirme y poder ejercer de Ingeniero en Sistemas de Informacion.
-                    </p>
+                <div class="Descripcion">
+                    <p>
+                        <h2> Descripcion </h2>
+                            Soy un estudiante muy apasionada con 3 años en la carrera, con ganas de seguir aprendiendo sobre cosas sobre programacion. Me caracterizo por ser un alumno muy participativo y alegre, buscando siempre mejorar como persona y estudiante. Mi objetivo de aca a unos años es poder recibirme y poder ejercer de Ingeniero en Sistemas de Informacion.
+                        </p> 
+                </div>
             </div>
             <div id="Habilidades" class="tabcontent">
-                <p> 
-                    <h2> Habilidades</h2>
-                    Tengo habilidades utiles para poder progresar en el ambito academico y profesional en un futuro. Tengo manejo de la herramientas como Excel, Word, PowerPoint. Se utilizar programas de facturacion Online, para realizar facturas y cargar datos de empleado, proveedores, etc. Puedo realizar caja, cierre de caja, manejo de Stock, Liquidacion de Haberes, etc.
-                </p>    
+                <div class="Habilidades">
+                    <p> 
+                        <h2> Habilidades</h2>
+                        Tengo habilidades utiles para poder progresar en el ambito academico y profesional en un futuro. Tengo manejo de la herramientas como Excel, Word, PowerPoint. Se utilizar programas de facturacion Online, para realizar facturas y cargar datos de empleado, proveedores, etc. Puedo realizar caja, cierre de caja, manejo de Stock, Liquidacion de Haberes, etc.
+                    </p> 
+                </div>     
             </div>
             <div id="Experiencias y Proyectos" class="tabcontent">
                 <div class="exp_container">
@@ -72,7 +84,7 @@
             <div class="formulario">
                 <div>
                     <h3>Si tenes preguntas, NO DUDES EN CONTACTARME!!!</h3>
-                    <form method="post" action="https://server.com/pagina">
+                    <form method="post" action="file:///C:/Users/Usuario/OneDrive/Documentos/Nico%20Facultad/DesarrolloSoftware/paginadestino.html">
                     <ul>    
                         <li>
                             <label for="first_name">Nombre:</label>
@@ -108,6 +120,10 @@
                     evt.currentTarget.className += " active";
                 }
             </script>
-                     
+       <footer>
+            <h2>
+                NicolasTaranzano
+            </h2>
+       </footer>              
     </body>
 </html>
